@@ -12,4 +12,16 @@ In digit recognition tasks, images of digits are usually preprocessed to a stand
 The raw pixel values in the images are typically scaled or normalized to improve model performance. Other preprocessing steps can include:
 
 1.Reshaping images into the required format for the model.
+
 2.Normalizing pixel values to a range of [0, 1].
+
+**3. Modeling:**
+
+**Deep Learning (Convolutional Neural Networks - CNNs):**
+CNNs are particularly effective at digit recognition due to their ability to automatically detect relevant features (like edges, textures, and shapes) in images. CNNs use layers of convolution filters and pooling layers to reduce image complexity while retaining important features. This is followed by fully connected layers for classification.
+
+**4. Training and Evaluation:**
+The model is trained on a dataset (MNIST) using labeled examples. The model's accuracy is tested on unseen data (the test set) to assess its performance.
+
+**5. Prediction:**
+After training, the model can predict the class of new, unseen images. For example, when given an image of a handwritten '7', the model will classify it as the digit '7' with high confidence.
